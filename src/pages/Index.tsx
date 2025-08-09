@@ -14,7 +14,7 @@ const Index = () => {
     {
       name: "Бетононасос",
       description: "Стрела 32 метра для точной подачи бетона",
-      image: "/img/dfa38cba-adbf-4f48-b1e7-20989198c676.jpg",
+      image: "https://cdn.poehali.dev/files/a9ba82a2-5236-4b82-aa4e-715cc21a3832.jpeg",
       icon: "Truck"
     },
     {
@@ -32,7 +32,7 @@ const Index = () => {
     {
       name: "Манипулятор",
       description: "С люлькой и рюмкой для подачи бетона",
-      image: "/img/018405aa-2b7f-4153-8724-05023615a1d6.jpg",
+      image: "https://cdn.poehali.dev/files/b8f7f3ae-7c15-4c9c-866a-5a47283bbca7.jpeg",
       icon: "Crane"
     }
   ];
@@ -131,11 +131,7 @@ const Index = () => {
       <section className="bg-gradient-to-br from-blue-50 via-white to-gray-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="mb-6">
-              <span className="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full mb-4">
-                Работаем с 2010 года
-              </span>
-            </div>
+
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               Качественный бетон
               <br />
@@ -159,8 +155,8 @@ const Index = () => {
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">14+</div>
-                <div className="text-sm text-gray-600">лет на рынке</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">Качество</div>
+                <div className="text-sm text-gray-600">гарантируем</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-600 mb-2">1000+</div>
