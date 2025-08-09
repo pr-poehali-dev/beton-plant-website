@@ -10,30 +10,88 @@ const Index = () => {
     message: ""
   });
 
+  const [selectedEquipment, setSelectedEquipment] = useState<any>(null);
+
   const equipment = [
     {
       name: "Бетононасос",
-      description: "Стрела 32 метра для точной подачи бетона",
+      description: "Точная подача бетона",
       image: "https://cdn.poehali.dev/files/a9ba82a2-5236-4b82-aa4e-715cc21a3832.jpeg",
-      icon: "Truck"
+      icon: "Truck",
+      fullDescription: "Автобетононасос - специализированная строительная машина для транспортировки и подачи бетонной смеси по трубопроводу под давлением. Позволяет подавать бетон на высоту и в труднодоступные места.",
+      applications: [
+        "Заливка фундаментов многоэтажных зданий",
+        "Бетонирование перекрытий на высоте",
+        "Подача бетона в стесненных условиях",
+        "Строительство мостов и эстакад",
+        "Заливка монолитных конструкций"
+      ],
+      specs: [
+        "Максимальная высота подачи: 32 метра",
+        "Производительность: до 90 м³/час",
+        "Дальность подачи: до 28 метров",
+        "Диаметр трубопровода: 125 мм"
+      ]
     },
     {
       name: "Самосвал",
       description: "Надежная доставка материалов",
       image: "https://cdn.poehali.dev/files/b84b6237-efe7-440d-93c9-094069a202c9.jpeg",
-      icon: "Truck"
+      icon: "Truck",
+      fullDescription: "Автосамосвал - грузовой автомобиль, оборудованный опрокидывающимся кузовом для перевозки сыпучих строительных материалов и их быстрой разгрузки.",
+      applications: [
+        "Доставка песка, щебня, гравия",
+        "Транспортировка грунта и строительного мусора",
+        "Перевозка сыпучих материалов",
+        "Работы по благоустройству территории",
+        "Дорожно-строительные работы"
+      ],
+      specs: [
+        "Грузоподъемность: до 25 тонн",
+        "Объем кузова: до 15 м³",
+        "Время разгрузки: 30-60 секунд",
+        "Угол опрокидывания: до 50°"
+      ]
     },
     {
       name: "Автобетоносмеситель",
       description: "Свежий бетон прямо на объект",
       image: "https://cdn.poehali.dev/files/eeb34117-093b-4d8e-8e72-050cb95134a5.jpeg",
-      icon: "RefreshCw"
+      icon: "RefreshCw",
+      fullDescription: "Автобетоносмеситель (миксер) - специальный автомобиль с вращающимся барабаном для транспортировки готовой бетонной смеси с сохранением её качества и подвижности.",
+      applications: [
+        "Доставка товарного бетона на объект",
+        "Заливка фундаментов частных домов",
+        "Бетонирование площадок и дорожек",
+        "Строительство промышленных объектов",
+        "Ремонтно-строительные работы"
+      ],
+      specs: [
+        "Объем барабана: до 9 м³",
+        "Скорость вращения: 2-12 об/мин",
+        "Время доставки: до 90 минут",
+        "Высота разгрузки: до 4 метров"
+      ]
     },
     {
       name: "Манипулятор",
-      description: "С люлькой и рюмкой для подачи бетона",
+      description: "Универсальная строительная техника",
       image: "https://cdn.poehali.dev/files/b8f7f3ae-7c15-4c9c-866a-5a47283bbca7.jpeg",
-      icon: "Crane"
+      icon: "Crane",
+      fullDescription: "Автокран-манипулятор - универсальная техника, сочетающая грузовой автомобиль с гидравлическим краном. Идеален для точных погрузочно-разгрузочных операций.",
+      applications: [
+        "Разгрузка строительных материалов",
+        "Монтаж железобетонных изделий",
+        "Установка оборудования",
+        "Строительство малоэтажных зданий",
+        "Благоустройство территории"
+      ],
+      specs: [
+        "Грузоподъемность крана: до 12 тонн",
+        "Вылет стрелы: до 25 метров",
+        "Грузоподъемность борта: до 15 тонн",
+        "Поворот стрелы: 360°"
+      ]
     }
   ];
 
@@ -50,7 +108,7 @@ const Index = () => {
     },
     {
       title: "Подача бетона",
-      description: "Подача бетононасосом на любую высоту до 32 метров",
+      description: "Подача бетононасосом на любую высоту",
       icon: "ArrowUp"
     },
     {
@@ -139,7 +197,7 @@ const Index = () => {
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
               Производство и поставка товарного бетона всех марок. Собственный автопарк 
-              с бетононасосом 32 метра для доставки и подачи на любые объекты.
+              спецтехники для доставки и подачи на любые объекты.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4">
@@ -163,8 +221,8 @@ const Index = () => {
                 <div className="text-sm text-gray-600">довольных клиентов</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">32м</div>
-                <div className="text-sm text-gray-600">стрела бетононасоса</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">Быстро</div>
+                <div className="text-sm text-gray-600">доставляем</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-600 mb-2">24/7</div>
@@ -187,7 +245,11 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {equipment.map((item, index) => (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <Card 
+                key={index} 
+                className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer"
+                onClick={() => setSelectedEquipment(item)}
+              >
                 <div className="aspect-video overflow-hidden">
                   <img
                     src={item.image}
@@ -203,6 +265,10 @@ const Index = () => {
                     <h3 className="text-lg font-semibold text-gray-900">{item.name}</h3>
                   </div>
                   <p className="text-gray-600 text-sm">{item.description}</p>
+                  <div className="mt-3 flex items-center text-blue-600 text-sm">
+                    <Icon name="Info" size={16} className="mr-1" />
+                    <span>Подробнее</span>
+                  </div>
                 </CardContent>
               </Card>
             ))}
@@ -429,7 +495,7 @@ const Index = () => {
               </div>
               <p className="text-gray-400 text-sm mb-4 max-w-md">
                 Производство и поставка качественного бетона в Муроме и Владимирской области. 
-                Работаем с 2010 года, собственный автопарк, гарантия качества.
+                Собственная техника, гарантия качества и надежности.
               </p>
               <p className="text-gray-500 text-xs">
                 © 2024 ООО ПромТехнологии. Все права защищены.
@@ -456,6 +522,76 @@ const Index = () => {
           </div>
         </div>
       </footer>
+
+      {/* Equipment Modal */}
+      {selectedEquipment && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div className="p-6">
+              <div className="flex justify-between items-center mb-4">
+                <h2 className="text-2xl font-bold text-gray-900">{selectedEquipment.name}</h2>
+                <button
+                  onClick={() => setSelectedEquipment(null)}
+                  className="text-gray-500 hover:text-gray-700"
+                >
+                  <Icon name="X" size={24} />
+                </button>
+              </div>
+              
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div>
+                  <img
+                    src={selectedEquipment.image}
+                    alt={selectedEquipment.name}
+                    className="w-full aspect-video object-cover rounded-lg"
+                  />
+                </div>
+                
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Описание</h3>
+                    <p className="text-gray-700">{selectedEquipment.fullDescription}</p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Технические характеристики</h3>
+                    <ul className="space-y-2">
+                      {selectedEquipment.specs.map((spec: string, index: number) => (
+                        <li key={index} className="flex items-start">
+                          <Icon name="Check" className="text-green-600 mr-2 mt-1" size={16} />
+                          <span className="text-gray-700">{spec}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Применение</h3>
+                    <ul className="space-y-2">
+                      {selectedEquipment.applications.map((app: string, index: number) => (
+                        <li key={index} className="flex items-start">
+                          <Icon name="ArrowRight" className="text-blue-600 mr-2 mt-1" size={16} />
+                          <span className="text-gray-700">{app}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="pt-4 border-t">
+                    <Button 
+                      className="w-full bg-blue-600 hover:bg-blue-700"
+                      onClick={() => setSelectedEquipment(null)}
+                    >
+                      <Icon name="Phone" className="mr-2" size={18} />
+                      Заказать эту технику
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
