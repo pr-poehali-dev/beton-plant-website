@@ -40,7 +40,7 @@ const Index = () => {
               <Icon name="Factory" className="text-white" size={24} />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-900">БетонМуром</h1>
+              <h1 className="text-xl font-bold text-gray-900">ООО ПромТехнологии</h1>
               <p className="text-sm text-gray-500">Бетонный завод</p>
             </div>
           </div>
@@ -200,10 +200,10 @@ const Index = () => {
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                 <Icon name="Factory" className="text-white" size={16} />
               </div>
-              <span className="text-lg font-semibold">БетонМуром</span>
+              <span className="text-lg font-semibold">ООО ПромТехнологии</span>
             </div>
             <p className="text-gray-400 text-sm">
-              © 2024 БетонМуром. Качественный бетон в Муроме и области
+              © 2024 ООО ПромТехнологии. Качественный бетон в Муроме и области
             </p>
           </div>
         </div>
