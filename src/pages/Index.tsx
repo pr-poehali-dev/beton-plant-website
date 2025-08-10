@@ -29,7 +29,7 @@ const Index = () => {
   const equipment = [
     {
       name: "Бетононасос",
-      description: "Точная подача бетона от 8000 руб",
+      description: "Точная подача бетона на высоту",
       image: "https://cdn.poehali.dev/files/a9ba82a2-5236-4b82-aa4e-715cc21a3832.jpeg",
       icon: "Truck",
       fullDescription: "Автобетононасос - специализированная строительная машина для транспортировки и подачи бетонной смеси по трубопроводу под давлением. Позволяет подавать бетон на высоту и в труднодоступные места.",
@@ -89,7 +89,7 @@ const Index = () => {
     },
     {
       name: "Манипулятор",
-      description: "Универсальная строительная техника от 9000 руб",
+      description: "Универсальная строительная техника",
       image: "https://cdn.poehali.dev/files/b8f7f3ae-7c15-4c9c-866a-5a47283bbca7.jpeg",
       icon: "Crane",
       fullDescription: "Автокран-манипулятор - универсальная техника, сочетающая грузовой автомобиль с гидравлическим краном. В наличии рюмка для подачи бетона и люлька для высотных работ. Идеален для точных погрузочно-разгрузочных операций. Дополнительные опции: люлька от 3000 руб, рюмка для подачи бетона от 3000 руб.",
@@ -300,6 +300,17 @@ const Index = () => {
                     </div>
                     <h3 className="text-lg font-semibold text-gray-900">{item.name}</h3>
                   </div>
+                  
+                  {/* Цена аренды большими синими буквами */}
+                  <div className="mb-3">
+                    <div className="text-2xl font-bold text-blue-600">
+                      {item.name === 'Бетононасос' && 'Аренда от 8000₽'}
+                      {item.name === 'Самосвал' && 'Аренда от 2000₽'}
+                      {item.name === 'Автобетоносмеситель' && 'Аренда от 3000₽'}
+                      {item.name === 'Манипулятор' && 'Аренда от 3000₽'}
+                    </div>
+                  </div>
+                  
                   <p className="text-gray-600 text-sm">{item.description}</p>
                   <div className="mt-3 flex items-center text-blue-600 text-sm">
                     <Icon name="Info" size={16} className="mr-1" />
@@ -368,84 +379,44 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Цены на бетон</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Конкурентные цены на товарный бетон всех марок
+              Качественный бетон всех марок по выгодной цене
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
-            <Card className="bg-white">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-semibold mb-2">Бетон М100</h3>
-                <div className="text-3xl font-bold text-blue-600 mb-4">от 4000₽</div>
-                <p className="text-gray-600 text-sm mb-4">за м³ (доставка НЕ входит в стоимость)</p>
-                <ul className="text-left text-sm text-gray-600 space-y-1">
-                  <li>• Подготовка под фундамент</li>
-                  <li>• Дорожки</li>
-                  <li>• Стяжки</li>
-                </ul>
+          <div className="max-w-4xl mx-auto">
+            <Card className="bg-white border-2 border-blue-500">
+              <CardContent className="p-8 text-center">
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Icon name="Factory" className="text-blue-600" size={32} />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Товарный бетон</h3>
+                  <div className="text-4xl font-bold text-blue-600 mb-4">от 4500₽</div>
+                  <p className="text-lg text-gray-600 mb-6">за м³ всех марок от М100 до М500</p>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                  <div className="bg-gray-50 rounded-lg p-4">
+                    <h4 className="font-semibold text-gray-900 mb-2">Для фундаментов</h4>
+                    <p className="text-sm text-gray-600">М200, М250, М300</p>
+                  </div>
+                  <div className="bg-gray-50 rounded-lg p-4">
+                    <h4 className="font-semibold text-gray-900 mb-2">Для стяжек</h4>
+                    <p className="text-sm text-gray-600">М150, М200</p>
+                  </div>
+                  <div className="bg-gray-50 rounded-lg p-4">
+                    <h4 className="font-semibold text-gray-900 mb-2">Для конструкций</h4>
+                    <p className="text-sm text-gray-600">М300, М400, М500</p>
+                  </div>
+                </div>
+                
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                  <p className="text-sm text-gray-700">
+                    <strong>Примечание:</strong> Доставка рассчитывается отдельно в зависимости от расстояния
+                  </p>
+                </div>
               </CardContent>
             </Card>
-
-            <Card className="bg-white">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-semibold mb-2">Бетон М150</h3>
-                <div className="text-3xl font-bold text-blue-600 mb-4">от 4200₽</div>
-                <p className="text-gray-600 text-sm mb-4">за м³ (доставка НЕ входит в стоимость)</p>
-                <ul className="text-left text-sm text-gray-600 space-y-1">
-                  <li>• Небольшие фундаменты</li>
-                  <li>• Стяжки полов</li>
-                  <li>• Бетонные дорожки</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-semibold mb-2">Бетон М200</h3>
-                <div className="text-3xl font-bold text-blue-600 mb-4">от 4400₽</div>
-                <p className="text-gray-600 text-sm mb-4">за м³ (доставка НЕ входит в стоимость)</p>
-                <ul className="text-left text-sm text-gray-600 space-y-1">
-                  <li>• Фундаменты</li>
-                  <li>• Стяжки полов</li>
-                  <li>• Дорожки</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white border-2 border-blue-500 relative">
-              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm">Популярный</span>
-              </div>
-              <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-semibold mb-2">Бетон М300</h3>
-                <div className="text-3xl font-bold text-blue-600 mb-4">от 4600₽</div>
-                <p className="text-gray-600 text-sm mb-4">за м³ (доставка НЕ входит в стоимость)</p>
-                <ul className="text-left text-sm text-gray-600 space-y-1">
-                  <li>• Перекрытия</li>
-                  <li>• Колонны</li>
-                  <li>• Балки</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-semibold mb-2">Бетон М400</h3>
-                <div className="text-3xl font-bold text-blue-600 mb-4">от 4800₽</div>
-                <p className="text-gray-600 text-sm mb-4">за м³ (доставка НЕ входит в стоимость)</p>
-                <ul className="text-left text-sm text-gray-600 space-y-1">
-                  <li>• Монолитные конструкции</li>
-                  <li>• Мосты</li>
-                  <li>• Специальные объекты</li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="text-center mt-8">
-            <p className="text-sm text-gray-600">
-              * Цены указаны с учетом доставки в пределах г. Муром. Доставка в область рассчитывается отдельно.
-            </p>
           </div>
         </div>
       </section>
