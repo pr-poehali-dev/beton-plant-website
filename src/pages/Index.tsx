@@ -174,7 +174,7 @@ const Index = () => {
     );
     
     // Открываем email клиент пользователя
-    window.location.href = `mailto:info@murombeton.ru?subject=${emailSubject}&body=${emailBody}`;
+    window.location.href = `mailto:prom33teh@mail.ru?subject=${emailSubject}&body=${emailBody}`;
     
     // Очищаем форму после отправки
     setFormData({
@@ -471,7 +471,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Icon name="Mail" className="text-blue-200" size={20} />
-                  <span className="text-lg">info@murombeton.ru</span>
+                  <span className="text-lg">prom33teh@mail.ru</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Icon name="Clock" className="text-blue-200" size={20} />
@@ -583,8 +583,8 @@ const Index = () => {
                   <Icon name="Mail" className="mr-3 text-blue-600" size={24} />
                   Email
                 </h3>
-                <a href="mailto:info@murombeton.ru" className="text-lg text-blue-600 hover:text-blue-800 transition-colors">
-                  info@murombeton.ru
+                <a href="mailto:prom33teh@mail.ru" className="text-lg text-blue-600 hover:text-blue-800 transition-colors">
+                  prom33teh@mail.ru
                 </a>
               </div>
 
@@ -652,7 +652,7 @@ const Index = () => {
               <div className="space-y-2 text-sm">
                 <p className="text-gray-300">8 (920) 916-55-67</p>
                 <p className="text-gray-300">8 (920) 927-96-52</p>
-                <p className="text-gray-300">info@murombeton.ru</p>
+                <p className="text-gray-300">prom33teh@mail.ru</p>
                 <p className="text-gray-300">территория ПМК 10 Муром</p>
               </div>
             </div>
