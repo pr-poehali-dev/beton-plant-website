@@ -143,7 +143,29 @@ const Index = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    
+    // Подготавливаем данные для отправки на email
+    const emailSubject = encodeURIComponent('Новая заявка с сайта - Бетон Муром');
+    const emailBody = encodeURIComponent(
+      `Новая заявка с сайта:
+
+Имя: ${formData.name}
+Телефон: ${formData.phone}
+Сообщение: ${formData.message || 'Не указано'}
+
+---
+Время отправки: ${new Date().toLocaleString('ru-RU')}`
+    );
+    
+    // Открываем email клиент пользователя
+    window.location.href = `mailto:prom33teh@mail.ru?subject=${emailSubject}&body=${emailBody}`;
+    
+    // Очищаем форму после отправки
+    setFormData({
+      name: "",
+      phone: "",
+      message: ""
+    });
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -404,11 +426,11 @@ const Index = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Icon name="Phone" className="text-blue-200" size={20} />
-                  <span className="text-lg">8 (920) 916-55-67</span>
+                  <a href="tel:+79209165567" className="text-lg hover:text-blue-300 transition-colors cursor-pointer">8 (920) 916-55-67</a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Icon name="Phone" className="text-blue-200" size={20} />
-                  <span className="text-lg">8 (920) 927-96-52</span>
+                  <a href="tel:+79209279652" className="text-lg hover:text-blue-300 transition-colors cursor-pointer">8 (920) 927-96-52</a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Icon name="Mail" className="text-blue-200" size={20} />
@@ -665,13 +687,12 @@ const Index = () => {
                   </div>
 
                   <div className="pt-4 border-t">
-                    <Button 
-                      className="w-full bg-blue-600 hover:bg-blue-700"
-                      onClick={() => setSelectedEquipment(null)}
-                    >
-                      <Icon name="Phone" className="mr-2" size={18} />
-                      Заказать эту технику
-                    </Button>
+                    <a href="tel:+79209165567">
+                      <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                        <Icon name="Phone" className="mr-2" size={18} />
+                        Заказать эту технику
+                      </Button>
+                    </a>
                   </div>
                 </div>
               </div>
