@@ -463,11 +463,11 @@ const Index = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Icon name="Phone" className="text-blue-200" size={20} />
-                  <a href="tel:+79209165567" className="text-lg hover:text-blue-300 transition-colors cursor-pointer">8 (920) 916-55-67</a>
+                  <a href="tel:+79209279652" className="text-lg hover:text-blue-300 transition-colors cursor-pointer">8 (920) 927-96-52</a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Icon name="Phone" className="text-blue-200" size={20} />
-                  <a href="tel:+79209279652" className="text-lg hover:text-blue-300 transition-colors cursor-pointer">8 (920) 927-96-52</a>
+                  <a href="tel:+79209165567" className="text-lg hover:text-blue-300 transition-colors cursor-pointer">8 (920) 916-55-67</a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Icon name="Mail" className="text-blue-200" size={20} />
@@ -569,11 +569,11 @@ const Index = () => {
                   Телефоны
                 </h3>
                 <div className="space-y-3">
-                  <a href="tel:+79209165567" className="block text-lg text-blue-600 hover:text-blue-800 transition-colors">
-                    8 (920) 916-55-67
-                  </a>
                   <a href="tel:+79209279652" className="block text-lg text-blue-600 hover:text-blue-800 transition-colors">
                     8 (920) 927-96-52
+                  </a>
+                  <a href="tel:+79209165567" className="block text-lg text-blue-600 hover:text-blue-800 transition-colors">
+                    8 (920) 916-55-67
                   </a>
                 </div>
               </div>
@@ -594,7 +594,10 @@ const Index = () => {
                   Зона доставки
                 </h3>
                 <p className="text-gray-700">
-                  Осуществляем доставку бетона по <strong>Округу Муром</strong> и прилегающим районам
+                  Осуществляем доставку бетона по <strong>Округу Муром</strong> и прилегающим районам.
+                </p>
+                <p className="text-gray-600 text-sm mt-2">
+                  <strong>Важно:</strong> Стоимость доставки обговаривается отдельно от стоимости бетона
                 </p>
               </div>
             </div>
@@ -650,8 +653,8 @@ const Index = () => {
             <div>
               <h3 className="text-lg font-semibold mb-4">Контакты</h3>
               <div className="space-y-2 text-sm">
-                <p className="text-gray-300">8 (920) 916-55-67</p>
                 <p className="text-gray-300">8 (920) 927-96-52</p>
+                <p className="text-gray-300">8 (920) 916-55-67</p>
                 <p className="text-gray-300">prom33teh@mail.ru</p>
                 <p className="text-gray-300">территория ПМК 10 Муром</p>
               </div>
