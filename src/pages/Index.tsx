@@ -29,10 +29,10 @@ const Index = () => {
   const equipment = [
     {
       name: "Бетононасос",
-      description: "Точная подача бетона",
+      description: "Точная подача бетона от 8000 руб",
       image: "https://cdn.poehali.dev/files/a9ba82a2-5236-4b82-aa4e-715cc21a3832.jpeg",
       icon: "Truck",
-      fullDescription: "Автобетононасос - специализированная строительная машина для транспортировки и подачи бетонной смеси по трубопроводу под давлением. Позволяет подавать бетон на высоту и в труднодоступные места. Стоимость: 10000 руб/час (без учёта доставки), дополнительная труба +1000 руб, бетоногаситель +1000 руб.",
+      fullDescription: "Автобетононасос - специализированная строительная машина для транспортировки и подачи бетонной смеси по трубопроводу под давлением. Позволяет подавать бетон на высоту и в труднодоступные места.",
       applications: [
         "Заливка фундаментов многоэтажных зданий",
         "Бетонирование перекрытий на высоте",
@@ -89,10 +89,10 @@ const Index = () => {
     },
     {
       name: "Манипулятор",
-      description: "Универсальная строительная техника",
+      description: "Универсальная строительная техника от 9000 руб",
       image: "https://cdn.poehali.dev/files/b8f7f3ae-7c15-4c9c-866a-5a47283bbca7.jpeg",
       icon: "Crane",
-      fullDescription: "Автокран-манипулятор - универсальная техника, сочетающая грузовой автомобиль с гидравлическим краном. В наличии рюмка для подачи бетона и люлька для высотных работ. Идеален для точных погрузочно-разгрузочных операций. Дополнительные опции: люлька 3000 руб, рюмка 3000 руб.",
+      fullDescription: "Автокран-манипулятор - универсальная техника, сочетающая грузовой автомобиль с гидравлическим краном. В наличии рюмка для подачи бетона и люлька для высотных работ. Идеален для точных погрузочно-разгрузочных операций. Дополнительные опции: люлька от 3000 руб, рюмка для подачи бетона от 3000 руб.",
       applications: [
         "Разгрузка строительных материалов",
         "Монтаж железобетонных изделий",
@@ -376,7 +376,7 @@ const Index = () => {
             <Card className="bg-white">
               <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-semibold mb-2">Бетон М100</h3>
-                <div className="text-3xl font-bold text-blue-600 mb-4">от 3200₽</div>
+                <div className="text-3xl font-bold text-blue-600 mb-4">от 4000₽</div>
                 <p className="text-gray-600 text-sm mb-4">за м³ (доставка НЕ входит в стоимость)</p>
                 <ul className="text-left text-sm text-gray-600 space-y-1">
                   <li>• Подготовка под фундамент</li>
@@ -389,7 +389,7 @@ const Index = () => {
             <Card className="bg-white">
               <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-semibold mb-2">Бетон М150</h3>
-                <div className="text-3xl font-bold text-blue-600 mb-4">от 3350₽</div>
+                <div className="text-3xl font-bold text-blue-600 mb-4">от 4200₽</div>
                 <p className="text-gray-600 text-sm mb-4">за м³ (доставка НЕ входит в стоимость)</p>
                 <ul className="text-left text-sm text-gray-600 space-y-1">
                   <li>• Небольшие фундаменты</li>
@@ -402,7 +402,7 @@ const Index = () => {
             <Card className="bg-white">
               <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-semibold mb-2">Бетон М200</h3>
-                <div className="text-3xl font-bold text-blue-600 mb-4">от 3500₽</div>
+                <div className="text-3xl font-bold text-blue-600 mb-4">от 4400₽</div>
                 <p className="text-gray-600 text-sm mb-4">за м³ (доставка НЕ входит в стоимость)</p>
                 <ul className="text-left text-sm text-gray-600 space-y-1">
                   <li>• Фундаменты</li>
@@ -418,7 +418,7 @@ const Index = () => {
               </div>
               <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-semibold mb-2">Бетон М300</h3>
-                <div className="text-3xl font-bold text-blue-600 mb-4">от 3800₽</div>
+                <div className="text-3xl font-bold text-blue-600 mb-4">от 4600₽</div>
                 <p className="text-gray-600 text-sm mb-4">за м³ (доставка НЕ входит в стоимость)</p>
                 <ul className="text-left text-sm text-gray-600 space-y-1">
                   <li>• Перекрытия</li>
@@ -431,7 +431,7 @@ const Index = () => {
             <Card className="bg-white">
               <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-semibold mb-2">Бетон М400</h3>
-                <div className="text-3xl font-bold text-blue-600 mb-4">от 4200₽</div>
+                <div className="text-3xl font-bold text-blue-600 mb-4">от 4800₽</div>
                 <p className="text-gray-600 text-sm mb-4">за м³ (доставка НЕ входит в стоимость)</p>
                 <ul className="text-left text-sm text-gray-600 space-y-1">
                   <li>• Монолитные конструкции</li>
