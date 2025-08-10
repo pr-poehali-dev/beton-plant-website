@@ -36,7 +36,7 @@ const Index = () => {
     {
       name: "Самосвал",
       description: "Надежная доставка материалов",
-      image: "/img/db6c5b50-1c85-402d-ad7d-d310e503a5ab.jpg",
+      image: "https://cdn.poehali.dev/files/50224a31-fb22-4d5f-82e9-54aac8d437f0.jpeg",
       icon: "Truck",
       fullDescription: "Автосамосвал - грузовой автомобиль, оборудованный опрокидывающимся кузовом для перевозки сыпучих строительных материалов и их быстрой разгрузки.",
       applications: [
@@ -398,7 +398,7 @@ const Index = () => {
             <div className="text-white">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Нужен бетон?</h2>
               <p className="text-xl text-blue-100 mb-8">
-                Оставьте заявку и мы свяжемся с вами в течение 15 минут. 
+                Оставьте заявку и мы свяжемся с вами в течение часа. 
                 Рассчитаем точную стоимость и подберем оптимальное решение.
               </p>
               <div className="space-y-4">
@@ -408,7 +408,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Icon name="Phone" className="text-blue-200" size={20} />
-                  <span className="text-lg">8 (920) 936-20-81</span>
+                  <span className="text-lg">8 (920) 927-96-52</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Icon name="Mail" className="text-blue-200" size={20} />
@@ -513,8 +513,8 @@ const Index = () => {
                   <a href="tel:+79209165567" className="block text-lg text-blue-600 hover:text-blue-800 transition-colors">
                     8 (920) 916-55-67
                   </a>
-                  <a href="tel:+79209362081" className="block text-lg text-blue-600 hover:text-blue-800 transition-colors">
-                    8 (920) 936-20-81
+                  <a href="tel:+79209279652" className="block text-lg text-blue-600 hover:text-blue-800 transition-colors">
+                    8 (920) 927-96-52
                   </a>
                 </div>
               </div>
@@ -581,7 +581,7 @@ const Index = () => {
                 <span className="text-lg font-semibold">ООО ПромТехнологии</span>
               </div>
               <p className="text-gray-400 text-sm mb-4 max-w-md">
-                Производство и поставка качественного бетона в Муроме и Владимирской области. 
+                Производство и поставка качественного бетона в Округе Муром. 
                 Собственная техника, гарантия качества и надежности.
               </p>
               <p className="text-gray-500 text-xs">
@@ -592,7 +592,7 @@ const Index = () => {
               <h3 className="text-lg font-semibold mb-4">Контакты</h3>
               <div className="space-y-2 text-sm">
                 <p className="text-gray-300">8 (920) 916-55-67</p>
-                <p className="text-gray-300">8 (920) 936-20-81</p>
+                <p className="text-gray-300">8 (920) 927-96-52</p>
                 <p className="text-gray-300">prom33teh@mail.ru</p>
                 <p className="text-gray-300">территория ПМК 10 Муром</p>
               </div>
