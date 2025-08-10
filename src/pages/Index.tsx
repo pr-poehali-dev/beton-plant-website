@@ -209,7 +209,7 @@ const Index = () => {
             <div className="hidden lg:flex items-center space-x-8">
               <div className="flex items-center space-x-2 text-gray-700">
                 <Icon name="Phone" size={18} />
-                <a href="tel:+79209165567" className="font-semibold text-blue-600 hover:text-blue-800 transition-colors">8 (920) 916-55-67</a>
+                <a href="tel:+79209279652" className="font-semibold text-blue-600 hover:text-blue-800 transition-colors">8 (920) 927-96-52</a>
               </div>
               <div className="flex items-center space-x-2 text-gray-700">
                 <Icon name="MapPin" size={18} />
@@ -239,9 +239,9 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4" asChild>
-                <a href="tel:+79209165567">
+                <a href="tel:+79209279652">
                   <Icon name="Phone" className="mr-2" size={20} />
-                  8 (920) 916-55-67
+                  8 (920) 927-96-52
                 </a>
               </Button>
             </div>
@@ -377,7 +377,7 @@ const Index = () => {
               <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-semibold mb-2">Бетон М100</h3>
                 <div className="text-3xl font-bold text-blue-600 mb-4">от 3200₽</div>
-                <p className="text-gray-600 text-sm mb-4">за м³ с доставкой</p>
+                <p className="text-gray-600 text-sm mb-4">за м³ (доставка НЕ входит в стоимость)</p>
                 <ul className="text-left text-sm text-gray-600 space-y-1">
                   <li>• Подготовка под фундамент</li>
                   <li>• Дорожки</li>
@@ -390,7 +390,7 @@ const Index = () => {
               <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-semibold mb-2">Бетон М150</h3>
                 <div className="text-3xl font-bold text-blue-600 mb-4">от 3350₽</div>
-                <p className="text-gray-600 text-sm mb-4">за м³ с доставкой</p>
+                <p className="text-gray-600 text-sm mb-4">за м³ (доставка НЕ входит в стоимость)</p>
                 <ul className="text-left text-sm text-gray-600 space-y-1">
                   <li>• Небольшие фундаменты</li>
                   <li>• Стяжки полов</li>
@@ -403,7 +403,7 @@ const Index = () => {
               <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-semibold mb-2">Бетон М200</h3>
                 <div className="text-3xl font-bold text-blue-600 mb-4">от 3500₽</div>
-                <p className="text-gray-600 text-sm mb-4">за м³ с доставкой</p>
+                <p className="text-gray-600 text-sm mb-4">за м³ (доставка НЕ входит в стоимость)</p>
                 <ul className="text-left text-sm text-gray-600 space-y-1">
                   <li>• Фундаменты</li>
                   <li>• Стяжки полов</li>
@@ -419,7 +419,7 @@ const Index = () => {
               <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-semibold mb-2">Бетон М300</h3>
                 <div className="text-3xl font-bold text-blue-600 mb-4">от 3800₽</div>
-                <p className="text-gray-600 text-sm mb-4">за м³ с доставкой</p>
+                <p className="text-gray-600 text-sm mb-4">за м³ (доставка НЕ входит в стоимость)</p>
                 <ul className="text-left text-sm text-gray-600 space-y-1">
                   <li>• Перекрытия</li>
                   <li>• Колонны</li>
@@ -432,7 +432,7 @@ const Index = () => {
               <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-semibold mb-2">Бетон М400</h3>
                 <div className="text-3xl font-bold text-blue-600 mb-4">от 4200₽</div>
-                <p className="text-gray-600 text-sm mb-4">за м³ с доставкой</p>
+                <p className="text-gray-600 text-sm mb-4">за м³ (доставка НЕ входит в стоимость)</p>
                 <ul className="text-left text-sm text-gray-600 space-y-1">
                   <li>• Монолитные конструкции</li>
                   <li>• Мосты</li>
@@ -467,7 +467,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Icon name="Phone" className="text-blue-200" size={20} />
-                  <a href="tel:+79209165567" className="text-lg hover:text-blue-300 transition-colors cursor-pointer">8 (920) 916-55-67</a>
+                  <a href="tel:+79209279652" className="text-lg hover:text-blue-300 transition-colors cursor-pointer">8 (920) 927-96-52</a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Icon name="Mail" className="text-blue-200" size={20} />
@@ -572,8 +572,8 @@ const Index = () => {
                   <a href="tel:+79209279652" className="block text-lg text-blue-600 hover:text-blue-800 transition-colors">
                     8 (920) 927-96-52
                   </a>
-                  <a href="tel:+79209165567" className="block text-lg text-blue-600 hover:text-blue-800 transition-colors">
-                    8 (920) 916-55-67
+                  <a href="tel:+79209279652" className="block text-lg text-blue-600 hover:text-blue-800 transition-colors">
+                    8 (920) 927-96-52
                   </a>
                 </div>
               </div>
@@ -654,7 +654,7 @@ const Index = () => {
               <h3 className="text-lg font-semibold mb-4">Контакты</h3>
               <div className="space-y-2 text-sm">
                 <p className="text-gray-300">8 (920) 927-96-52</p>
-                <p className="text-gray-300">8 (920) 916-55-67</p>
+                <p className="text-gray-300">8 (920) 927-96-52</p>
                 <p className="text-gray-300">prom33teh@mail.ru</p>
                 <p className="text-gray-300">территория ПМК 10 Муром</p>
               </div>
@@ -727,7 +727,7 @@ const Index = () => {
                   </div>
 
                   <div className="pt-4 border-t">
-                    <a href="tel:+79209165567">
+                    <a href="tel:+79209279652">
                       <Button className="w-full bg-blue-600 hover:bg-blue-700">
                         <Icon name="Phone" className="mr-2" size={18} />
                         Заказать эту технику
