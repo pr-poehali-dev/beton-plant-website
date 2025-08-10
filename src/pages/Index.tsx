@@ -238,13 +238,11 @@ const Index = () => {
               спецтехники для доставки и подачи на любые объекты.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4">
-                <Icon name="Phone" className="mr-2" size={20} />
-                8 (920) 916-55-67
-              </Button>
-              <Button size="lg" variant="outline" className="px-8 py-4">
-                <Icon name="Calculator" className="mr-2" size={20} />
-                Рассчитать стоимость
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4" asChild>
+                <a href="tel:+79209165567">
+                  <Icon name="Phone" className="mr-2" size={20} />
+                  8 (920) 916-55-67
+                </a>
               </Button>
             </div>
 
@@ -374,7 +372,33 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+            <Card className="bg-white">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-semibold mb-2">Бетон М100</h3>
+                <div className="text-3xl font-bold text-blue-600 mb-4">от 3200₽</div>
+                <p className="text-gray-600 text-sm mb-4">за м³ с доставкой</p>
+                <ul className="text-left text-sm text-gray-600 space-y-1">
+                  <li>• Подготовка под фундамент</li>
+                  <li>• Дорожки</li>
+                  <li>• Стяжки</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-semibold mb-2">Бетон М150</h3>
+                <div className="text-3xl font-bold text-blue-600 mb-4">от 3350₽</div>
+                <p className="text-gray-600 text-sm mb-4">за м³ с доставкой</p>
+                <ul className="text-left text-sm text-gray-600 space-y-1">
+                  <li>• Небольшие фундаменты</li>
+                  <li>• Стяжки полов</li>
+                  <li>• Бетонные дорожки</li>
+                </ul>
+              </CardContent>
+            </Card>
+
             <Card className="bg-white">
               <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-semibold mb-2">Бетон М200</h3>
@@ -419,12 +443,9 @@ const Index = () => {
           </div>
 
           <div className="text-center mt-8">
-            <p className="text-sm text-gray-600 mb-4">
+            <p className="text-sm text-gray-600">
               * Цены указаны с учетом доставки в пределах г. Муром. Доставка в область рассчитывается отдельно.
             </p>
-            <Button className="bg-blue-600 hover:bg-blue-700">
-              Получить точный расчет
-            </Button>
           </div>
         </div>
       </section>
