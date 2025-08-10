@@ -36,7 +36,7 @@ const Index = () => {
     {
       name: "Самосвал",
       description: "Надежная доставка материалов",
-      image: "https://cdn.poehali.dev/files/b84b6237-efe7-440d-93c9-094069a202c9.jpeg",
+      image: "/img/db6c5b50-1c85-402d-ad7d-d310e503a5ab.jpg",
       icon: "Truck",
       fullDescription: "Автосамосвал - грузовой автомобиль, оборудованный опрокидывающимся кузовом для перевозки сыпучих строительных материалов и их быстрой разгрузки.",
       applications: [
@@ -103,7 +103,7 @@ const Index = () => {
     },
     {
       title: "Доставка бетона",
-      description: "Доставка автобетоносмесителями по Мурому и области",
+      description: "Доставка автобетоносмесителями по Округу Муром",
       icon: "Truck"
     },
     {
@@ -131,7 +131,7 @@ const Index = () => {
     },
     {
       title: "Быстрая доставка",
-      description: "Доставка в день заказа по Мурому и Владимирской области",
+      description: "Доставка в день заказа по Округу Муром",
       icon: "Clock"
     },
     {
@@ -482,6 +482,93 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Contact Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Контакты и местоположение</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Найдите нас и свяжитесь с нами любым удобным способом
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Contact Info */}
+            <div className="space-y-8">
+              <div className="bg-gray-50 rounded-xl p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-6 flex items-center">
+                  <Icon name="MapPin" className="mr-3 text-blue-600" size={24} />
+                  Наш адрес
+                </h3>
+                <p className="text-gray-700 text-lg mb-4">территория ПМК 10 Муром</p>
+                <p className="text-sm text-gray-600">Владимирская область, Россия</p>
+              </div>
+
+              <div className="bg-gray-50 rounded-xl p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-6 flex items-center">
+                  <Icon name="Phone" className="mr-3 text-blue-600" size={24} />
+                  Телефоны
+                </h3>
+                <div className="space-y-3">
+                  <a href="tel:+79209165567" className="block text-lg text-blue-600 hover:text-blue-800 transition-colors">
+                    8 (920) 916-55-67
+                  </a>
+                  <a href="tel:+79209362081" className="block text-lg text-blue-600 hover:text-blue-800 transition-colors">
+                    8 (920) 936-20-81
+                  </a>
+                </div>
+              </div>
+
+              <div className="bg-gray-50 rounded-xl p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-6 flex items-center">
+                  <Icon name="Mail" className="mr-3 text-blue-600" size={24} />
+                  Email
+                </h3>
+                <a href="mailto:prom33teh@mail.ru" className="text-lg text-blue-600 hover:text-blue-800 transition-colors">
+                  prom33teh@mail.ru
+                </a>
+              </div>
+
+              <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                  <Icon name="Truck" className="mr-3 text-blue-600" size={24} />
+                  Зона доставки
+                </h3>
+                <p className="text-gray-700">
+                  Осуществляем доставку бетона по <strong>Округу Муром</strong> и прилегающим районам
+                </p>
+              </div>
+            </div>
+
+            {/* Map */}
+            <div className="space-y-6">
+              <div className="bg-gray-50 rounded-xl p-6 h-96 flex items-center justify-center">
+                <div className="text-center">
+                  <Icon name="MapPin" className="text-blue-600 mx-auto mb-4" size={48} />
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Интерактивная карта</h3>
+                  <p className="text-gray-600 mb-4">территория ПМК 10, Муром</p>
+                  <p className="text-sm text-gray-500">
+                    Для получения точных координат и маршрута свяжитесь с нами по телефону
+                  </p>
+                </div>
+              </div>
+              
+              <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                  <Icon name="Clock" className="mr-3 text-green-600" size={20} />
+                  Режим работы
+                </h3>
+                <div className="space-y-2 text-sm">
+                  <p className="text-gray-700"><strong>Пн-Пт:</strong> 8:00 - 18:00</p>
+                  <p className="text-gray-700"><strong>Сб:</strong> 9:00 - 15:00</p>
+                  <p className="text-gray-700"><strong>Вс:</strong> По договоренности</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -507,7 +594,7 @@ const Index = () => {
                 <p className="text-gray-300">8 (920) 916-55-67</p>
                 <p className="text-gray-300">8 (920) 936-20-81</p>
                 <p className="text-gray-300">prom33teh@mail.ru</p>
-                <p className="text-gray-300">г. Муром, Владимирская область</p>
+                <p className="text-gray-300">территория ПМК 10 Муром</p>
               </div>
             </div>
             <div>
