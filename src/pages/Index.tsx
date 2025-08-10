@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +11,20 @@ const Index = () => {
   });
 
   const [selectedEquipment, setSelectedEquipment] = useState<any>(null);
+
+  useEffect(() => {
+    document.title = "Муром бетон - ООО ПромТехнологии | Бетонный завод в Мурому";
+    
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Муром бетон - производство и доставка товарного бетона всех марок. Бетонный завод ООО ПромТехнологии в Мурому. Качественный бетон, быстрая доставка.');
+    }
+    
+    const keywords = document.createElement('meta');
+    keywords.name = 'keywords';
+    keywords.content = 'муром бетон, бетон муром, бетонный завод муром, товарный бетон муром, доставка бетона муром, ооо промтехнологии, бетон владимирская область';
+    document.head.appendChild(keywords);
+  }, []);
 
   const equipment = [
     {
@@ -78,10 +92,12 @@ const Index = () => {
       description: "Универсальная строительная техника",
       image: "https://cdn.poehali.dev/files/b8f7f3ae-7c15-4c9c-866a-5a47283bbca7.jpeg",
       icon: "Crane",
-      fullDescription: "Автокран-манипулятор - универсальная техника, сочетающая грузовой автомобиль с гидравлическим краном. Идеален для точных погрузочно-разгрузочных операций.",
+      fullDescription: "Автокран-манипулятор - универсальная техника, сочетающая грузовой автомобиль с гидравлическим краном. В наличии рюмка для подачи бетона и люлька для высотных работ. Идеален для точных погрузочно-разгрузочных операций.",
       applications: [
         "Разгрузка строительных материалов",
         "Монтаж железобетонных изделий",
+        "Подача бетона рюмкой",
+        "Высотные работы с люлькой",
         "Установка оборудования",
         "Строительство малоэтажных зданий",
         "Благоустройство территории"
@@ -193,7 +209,7 @@ const Index = () => {
             <div className="hidden lg:flex items-center space-x-8">
               <div className="flex items-center space-x-2 text-gray-700">
                 <Icon name="Phone" size={18} />
-                <span className="font-semibold text-blue-600">8 (920) 916-55-67</span>
+                <a href="tel:+79209165567" className="font-semibold text-blue-600 hover:text-blue-800 transition-colors">8 (920) 916-55-67</a>
               </div>
               <div className="flex items-center space-x-2 text-gray-700">
                 <Icon name="MapPin" size={18} />
