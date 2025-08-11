@@ -588,7 +588,7 @@ const Index = () => {
                 </div>
                 <div className="relative">
                   <iframe 
-                    src="https://yandex.ru/map-widget/v1/?ll=42.019070%2C55.622802&z=16&pt=42.019070%2C55.622802%2Cpm2rdm~ООО%20ПромТехнологии%0Aтерритория%20ПМК%2010%0Aздание%203%2C%20строение%201" 
+                    src="https://yandex.ru/map-widget/v1/?ll=41.971987%2C55.593663&z=16&pt=41.971987%2C55.593663%2Cpm2rdm~ООО%20ПромТехнологии%0Aтерритория%20ПМК%2010%0Aздание%203%2C%20строение%201" 
                     width="100%" 
                     height="350"
                     style={{ border: 'none' }}
@@ -613,7 +613,7 @@ const Index = () => {
                       <span>Построить маршрут</span>
                     </div>
                     <a 
-                      href="https://yandex.ru/maps/?ll=42.019070%2C55.622802&z=16&pt=42.019070%2C55.622802%2Cpm2rdm" 
+                      href="https://yandex.ru/maps/?ll=41.971987%2C55.593663&z=16&pt=41.971987%2C55.593663%2Cpm2rdm" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
