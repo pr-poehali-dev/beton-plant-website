@@ -52,7 +52,7 @@ const Index = () => {
       description: "Надежная доставка материалов",
       image: "https://cdn.poehali.dev/files/50224a31-fb22-4d5f-82e9-54aac8d437f0.jpeg",
       icon: "Truck",
-      fullDescription: "Автосамосвал - грузовой автомобиль, оборудованный опрокидывающимся кузовом для перевозки сыпучих строительных материалов и их быстрой разгрузки.",
+      fullDescription: "Автосамосвал - надежный грузовой автомобиль для перевозки сыпучих строительных материалов. Обеспечивает быструю доставку и разгрузку на объекте.",
       applications: [
         "Доставка песка, щебня, гравия",
         "Транспортировка грунта и строительного мусора",
@@ -72,7 +72,7 @@ const Index = () => {
       description: "Свежий бетон прямо на объект",
       image: "https://cdn.poehali.dev/files/eeb34117-093b-4d8e-8e72-050cb95134a5.jpeg",
       icon: "RefreshCw",
-      fullDescription: "Автобетоносмеситель (миксер) - специальный автомобиль с вращающимся барабаном для транспортировки готовой бетонной смеси с сохранением её качества и подвижности.",
+      fullDescription: "Автобетоносмеситель (миксер) - специальный автомобиль для транспортировки готовой бетонной смеси с сохранением её качества и подвижности на объект.",
       applications: [
         "Доставка товарного бетона на объект",
         "Заливка фундаментов частных домов",
@@ -92,7 +92,7 @@ const Index = () => {
       description: "Универсальная строительная техника",
       image: "https://cdn.poehali.dev/files/b8f7f3ae-7c15-4c9c-866a-5a47283bbca7.jpeg",
       icon: "Crane",
-      fullDescription: "Автокран-манипулятор - универсальная техника, сочетающая грузовой автомобиль с гидравлическим краном. В наличии рюмка для подачи бетона и люлька для высотных работ. Идеален для точных погрузочно-разгрузочных операций. Дополнительные опции: люлька от 3000 руб, рюмка для подачи бетона от 3000 руб.",
+      fullDescription: "Автокран-манипулятор - многофункциональная строительная техника, объединяющая возможности грузового автомобиля и крана. Незаменим для погрузочно-разгрузочных работ, монтажа конструкций и подачи материалов. Высокая маневренность и точность позволяют работать в ограниченном пространстве.",
       applications: [
         "Разгрузка строительных материалов",
         "Монтаж железобетонных изделий",
@@ -696,6 +696,39 @@ const Index = () => {
                       ))}
                     </ul>
                   </div>
+
+                  {selectedEquipment.name === 'Манипулятор' && (
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3">Дополнительные опции</h3>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                          <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                              <Icon name="Users" className="text-blue-600 mr-2" size={20} />
+                              <span className="font-medium text-gray-900">Люлька</span>
+                            </div>
+                            <div className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                              от 3000₽
+                            </div>
+                          </div>
+                          <p className="text-sm text-gray-600 mt-2">Для высотных работ</p>
+                        </div>
+                        
+                        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                          <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                              <Icon name="Droplet" className="text-blue-600 mr-2" size={20} />
+                              <span className="font-medium text-gray-900">Рюмка</span>
+                            </div>
+                            <div className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                              от 3000₽
+                            </div>
+                          </div>
+                          <p className="text-sm text-gray-600 mt-2">Для подачи бетона</p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
 
                   <div className="pt-4 border-t">
                     <a href="tel:+79209279652">
