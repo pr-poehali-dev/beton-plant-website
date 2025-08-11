@@ -198,8 +198,12 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                <Icon name="Factory" className="text-white" size={24} />
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/files/f587dc4f-4cd2-45be-a582-09b83aac4274.jpeg" 
+                  alt="ООО ПромТехнологии - логотип"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h1 className="text-xl font-bold text-gray-900">ООО ПромТехнологии</h1>
