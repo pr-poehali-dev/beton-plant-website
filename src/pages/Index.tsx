@@ -575,14 +575,50 @@ const Index = () => {
 
             {/* Map */}
             <div className="space-y-6">
-              <div className="bg-gray-50 rounded-xl p-6 h-96 flex items-center justify-center">
-                <div className="text-center">
-                  <Icon name="MapPin" className="text-blue-600 mx-auto mb-4" size={48} />
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Интерактивная карта</h3>
-                  <p className="text-gray-600 mb-4">территория ПМК 10, Муром</p>
-                  <p className="text-sm text-gray-500">
-                    Для получения точных координат и маршрута свяжитесь с нами по телефону
-                  </p>
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm">
+                <div className="p-4 border-b bg-gray-50">
+                  <div className="flex items-center">
+                    <Icon name="MapPin" className="text-blue-600 mr-3" size={24} />
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900">Наше местоположение</h3>
+                      <p className="text-gray-600 text-sm">территория ПМК 10, Муром, Владимирская область</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative">
+                  <iframe 
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Aeb5fb9f1ae2a91c2bce0d85f5cb8eca7e45bc35bf6e8c46a09f06da7b7df2e60&amp;source=constructor" 
+                    width="100%" 
+                    height="350"
+                    style={{ border: 'none' }}
+                    title="Карта местоположения ООО ПромТехнологии"
+                    className="w-full"
+                  />
+                  <div className="absolute bottom-4 left-4 bg-white rounded-lg shadow-lg p-3 max-w-xs">
+                    <div className="flex items-start">
+                      <Icon name="Building2" className="text-blue-600 mr-2 mt-1" size={16} />
+                      <div>
+                        <p className="text-sm font-semibold text-gray-900">ООО ПромТехнологии</p>
+                        <p className="text-xs text-gray-600">Производство бетона и аренда техники</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="p-4 bg-blue-50">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center text-sm text-gray-700">
+                      <Icon name="Navigation" className="text-blue-600 mr-2" size={16} />
+                      <span>Маршрут на Яндекс Картах</span>
+                    </div>
+                    <a 
+                      href="https://yandex.ru/maps/?text=территория%20ПМК%2010%20Муром&mode=search" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
+                    >
+                      Открыть карту
+                    </a>
+                  </div>
                 </div>
               </div>
               
