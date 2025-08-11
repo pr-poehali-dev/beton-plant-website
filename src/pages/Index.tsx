@@ -198,9 +198,9 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 flex items-center justify-center">
+              <div className="w-14 h-14 flex items-center justify-center bg-gray-50 rounded-lg p-1">
                 <img 
-                  src="/img/3d791fa7-694d-43f7-9ec0-131971e793a9.jpg" 
+                  src="https://cdn.poehali.dev/files/41de6a56-c907-4ff5-8315-0c608cad6b11.jpeg" 
                   alt="ООО ПромТехнологии - логотип"
                   className="w-full h-full object-contain"
                 />
