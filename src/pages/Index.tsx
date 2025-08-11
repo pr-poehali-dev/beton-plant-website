@@ -31,7 +31,7 @@ const Index = () => {
       name: "Бетононасос",
       description: "Точная подача бетона на высоту",
       image: "https://cdn.poehali.dev/files/a9ba82a2-5236-4b82-aa4e-715cc21a3832.jpeg",
-      icon: "Truck",
+      iconSvg: "/icons/pump-icon.svg",
       fullDescription: "Автобетононасос - специализированная строительная машина для транспортировки и подачи бетонной смеси по трубопроводу под давлением. Позволяет подавать бетон на высоту и в труднодоступные места.",
       applications: [
         "Заливка фундаментов многоэтажных зданий",
@@ -71,7 +71,7 @@ const Index = () => {
       name: "Автобетоносмеситель",
       description: "Свежий бетон прямо на объект",
       image: "https://cdn.poehali.dev/files/eeb34117-093b-4d8e-8e72-050cb95134a5.jpeg",
-      icon: "RefreshCw",
+      iconSvg: "/icons/mixer-icon.svg",
       fullDescription: "Автобетоносмеситель (миксер) - специальный автомобиль для транспортировки готовой бетонной смеси с сохранением её качества и подвижности на объект.",
       applications: [
         "Доставка товарного бетона на объект",
@@ -91,7 +91,7 @@ const Index = () => {
       name: "Манипулятор",
       description: "Универсальная строительная техника",
       image: "https://cdn.poehali.dev/files/b8f7f3ae-7c15-4c9c-866a-5a47283bbca7.jpeg",
-      icon: "Crane",
+      iconSvg: "/icons/crane-icon.svg",
       fullDescription: "Автокран-манипулятор - многофункциональная строительная техника, объединяющая возможности грузового автомобиля и крана. Незаменим для погрузочно-разгрузочных работ, монтажа конструкций и подачи материалов. Высокая маневренность и точность позволяют работать в ограниченном пространстве.",
       applications: [
         "Разгрузка строительных материалов",
@@ -299,8 +299,18 @@ const Index = () => {
                 </div>
                 <CardContent className="p-6">
                   <div className="flex items-center mb-3">
-                    <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
-                      <Icon name={item.icon as any} className="text-blue-600" size={18} />
+                    <div className="w-8 h-8 mr-3">
+                      {item.iconSvg ? (
+                        <img 
+                          src={item.iconSvg} 
+                          alt={`${item.name} иконка`}
+                          className="w-full h-full"
+                        />
+                      ) : (
+                        <div className="w-full h-full bg-blue-100 rounded-lg flex items-center justify-center">
+                          <Icon name={item.icon as any} className="text-blue-600" size={18} />
+                        </div>
+                      )}
                     </div>
                     <h3 className="text-lg font-semibold text-gray-900">{item.name}</h3>
                   </div>
