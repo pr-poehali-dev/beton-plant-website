@@ -1,0 +1,32 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" rx="8" fill="#E3F2FD"/>
+  <g transform="translate(4, 6)">
+    <!-- Truck cabin -->
+    <path d="M16 8h6v8h-6V8z" fill="none" stroke="#1976D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Cabin details -->
+    <path d="M18 10h2" stroke="#1976D2" stroke-width="1"/>
+    <path d="M18 12h1" stroke="#1976D2" stroke-width="1"/>
+    
+    <!-- Mixer drum (large oval) -->
+    <ellipse cx="10" cy="12" rx="8" ry="6" fill="none" stroke="#1976D2" stroke-width="1.5"/>
+    <!-- Drum opening -->
+    <path d="M4 8c2-2 4-2 6 0" fill="none" stroke="#1976D2" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Drum details -->
+    <circle cx="8" cy="10" r="1" fill="#1976D2"/>
+    <circle cx="12" cy="14" r="1" fill="#1976D2"/>
+    
+    <!-- Support frame -->
+    <path d="M2 16h16" stroke="#1976D2" stroke-width="1.5"/>
+    <path d="M4 14v2" stroke="#1976D2" stroke-width="1"/>
+    <path d="M8 14v2" stroke="#1976D2" stroke-width="1"/>
+    <path d="M12 14v2" stroke="#1976D2" stroke-width="1"/>
+    
+    <!-- Wheels -->
+    <circle cx="6" cy="19" r="2.5" fill="none" stroke="#1976D2" stroke-width="1.5"/>
+    <circle cx="6" cy="19" r="1" fill="#1976D2"/>
+    <circle cx="14" cy="19" r="2.5" fill="none" stroke="#1976D2" stroke-width="1.5"/>
+    <circle cx="14" cy="19" r="1" fill="#1976D2"/>
+    <circle cx="19" cy="19" r="2.5" fill="none" stroke="#1976D2" stroke-width="1.5"/>
+    <circle cx="19" cy="19" r="1" fill="#1976D2"/>
+  </g>
+</svg>
