@@ -581,14 +581,14 @@ const Index = () => {
                     <Icon name="MapPin" className="text-blue-600 mr-3" size={24} />
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900">Наше местоположение</h3>
-                      <p className="text-gray-600 text-sm">с.п. Ковардицкое, территория ПМК10, здание 3, помещение 1</p>
+                      <p className="text-gray-600 text-sm">территория ПМК 10, здание 3, строение 1</p>
                       <p className="text-gray-500 text-xs">г. Муром, Владимирская область</p>
                     </div>
                   </div>
                 </div>
                 <div className="relative">
                   <iframe 
-                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A8f8b7b1f5c4a6d2e9b3c8f7a1e5d4c2b6a9f8e7d3c5b2a1f4e6d9c8b7a5e3f1d&amp;source=constructor&amp;ll=40.333633%2C55.570983&amp;z=15&amp;pt=40.333633%2C55.570983%2Cpm2rdm~ООО%20ПромТехнологии%0Aтерритория%20ПМК10%2C%20здание%203" 
+                    src="https://yandex.ru/map-widget/v1/?ll=42.019070%2C55.622802&z=16&pt=42.019070%2C55.622802%2Cpm2rdm~ООО%20ПромТехнологии%0Aтерритория%20ПМК%2010%0Aздание%203%2C%20строение%201" 
                     width="100%" 
                     height="350"
                     style={{ border: 'none' }}
@@ -600,7 +600,7 @@ const Index = () => {
                       <Icon name="Building2" className="text-blue-600 mr-2 mt-1" size={16} />
                       <div>
                         <p className="text-sm font-semibold text-gray-900">ООО ПромТехнологии</p>
-                        <p className="text-xs text-gray-600">ПМК10, здание 3, помещение 1</p>
+                        <p className="text-xs text-gray-600">ПМК 10, здание 3, строение 1</p>
                         <p className="text-xs text-gray-500">Производство бетона и аренда техники</p>
                       </div>
                     </div>
@@ -613,7 +613,7 @@ const Index = () => {
                       <span>Построить маршрут</span>
                     </div>
                     <a 
-                      href="https://yandex.ru/maps/?text=Муром%20сельское%20поселение%20Ковардицкое%20территория%20ПМК10%20здание%203&mode=search&ll=40.333633%2C55.570983&z=15" 
+                      href="https://yandex.ru/maps/?ll=42.019070%2C55.622802&z=16&pt=42.019070%2C55.622802%2Cpm2rdm" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
