@@ -31,7 +31,7 @@ const Index = () => {
       name: "Бетононасос",
       description: "Точная подача бетона на высоту",
       image: "https://cdn.poehali.dev/files/a9ba82a2-5236-4b82-aa4e-715cc21a3832.jpeg",
-      iconImage: "/img/be515f23-160f-4188-91da-56bd9c7fa24e.jpg",
+      icon: "Truck",
       fullDescription: "Автобетононасос - специализированная строительная машина для транспортировки и подачи бетонной смеси по трубопроводу под давлением. Позволяет подавать бетон на высоту и в труднодоступные места.",
       applications: [
         "Заливка фундаментов многоэтажных зданий",
@@ -71,7 +71,7 @@ const Index = () => {
       name: "Автобетоносмеситель",
       description: "Свежий бетон прямо на объект",
       image: "https://cdn.poehali.dev/files/eeb34117-093b-4d8e-8e72-050cb95134a5.jpeg",
-      iconImage: "/img/46d770af-6211-42fc-a71b-2b22745099e6.jpg",
+      icon: "RefreshCw",
       fullDescription: "Автобетоносмеситель (миксер) - специальный автомобиль для транспортировки готовой бетонной смеси с сохранением её качества и подвижности на объект.",
       applications: [
         "Доставка товарного бетона на объект",
@@ -91,7 +91,7 @@ const Index = () => {
       name: "Манипулятор",
       description: "Универсальная строительная техника",
       image: "https://cdn.poehali.dev/files/b8f7f3ae-7c15-4c9c-866a-5a47283bbca7.jpeg",
-      iconImage: "/img/e725407f-993d-49bd-bb20-a26351a06fc7.jpg",
+      icon: "Crane",
       fullDescription: "Автокран-манипулятор - многофункциональная строительная техника, объединяющая возможности грузового автомобиля и крана. Незаменим для погрузочно-разгрузочных работ, монтажа конструкций и подачи материалов. Высокая маневренность и точность позволяют работать в ограниченном пространстве.",
       applications: [
         "Разгрузка строительных материалов",
@@ -299,18 +299,8 @@ const Index = () => {
                 </div>
                 <CardContent className="p-6">
                   <div className="flex items-center mb-3">
-                    <div className="w-8 h-8 rounded-lg flex items-center justify-center mr-3 overflow-hidden">
-                      {item.iconImage ? (
-                        <img 
-                          src={item.iconImage} 
-                          alt={`${item.name} иконка`}
-                          className="w-full h-full object-cover"
-                        />
-                      ) : (
-                        <div className="w-full h-full bg-blue-100 rounded-lg flex items-center justify-center">
-                          <Icon name={item.icon as any} className="text-blue-600" size={18} />
-                        </div>
-                      )}
+                    <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                      <Icon name={item.icon as any} className="text-blue-600" size={18} />
                     </div>
                     <h3 className="text-lg font-semibold text-gray-900">{item.name}</h3>
                   </div>
